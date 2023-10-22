@@ -3,22 +3,22 @@ const utils = require('./utils');
 describe('permutation', () => {
     it("input 'a' should return  ['a']", () => {
         const result = utils.findPermutation('a');
-        expect(result).toEqual('a');
+        expect(result).toEqual(['a']);
     });
 
     it("input 'ab' should return ['ab', 'ba']", () => {
         const result = utils.findPermutation('ab');
-        expect(result).toEqual('ab', 'ba');
+        expect(result).toEqual(['ab', 'ba']);
     });
 
     it("input 'abc' should return ['abc','acb','bac','bca','cab','cba']", () => {
         const result = utils.findPermutation('abc');
-        expect(result).toEqual('abc','acb','bac','bca','cab','cba');
+        expect(result).toEqual(['abc','acb','bac','bca','cab','cba']);
     });
 
     it("input 'aabb' should return ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa']", () => {
         const result = utils.findPermutation('aabb');
-        expect(result).toEqual('aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa');
+        expect(result).toEqual(['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa']);
     });
 });
 
